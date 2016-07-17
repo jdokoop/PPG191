@@ -49,6 +49,7 @@ showpacs,preprintnumbers,
 \usepackage{xspace}	% Include xspace
 \usepackage{color}
 \usepackage{xcolor}
+\usepackage{amsmath}
 %\usepackage{hyperref}% add hypertext capabilities
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
@@ -95,7 +96,7 @@ showpacs,preprintnumbers,
 \title{Measurement of Long-Range Angular Correlations and Azimuthal Anisotropies in High Multiplicity \pau Collisions at \sqsn = 200 GeV}% Force line breaks with \\
 
 \author{Author list: Brant will insert later}
-undo
+
 \date{\today}% It is always \today, today,
              %  but any date may be explicitly specified
 
@@ -119,14 +120,16 @@ The PHENIX collaboration has actively pursued this course of study by analyzing 
 
 This communication completes the above suite of studies by presenting two-particle correlations and the transverse momentum (\pt) dependence of $v_2$ for central \pau collisions at \sqsn = 200 GeV. These results are compared to those from \dau and \hau in the same centrality class, as well as to available theoretical calculations.
 
-A detailed description of the PHENIX detector can be found in Ref.~\cite{Adcox2003469}. For this analysis, charged particles were reconstructed with the two central arm spectrometers, each covering $|\eta|<0.35$ and $\pi/2$ in azimuthal angle, consisting of drift chambers (DC) and multi-wire proportional pad chambers (PC). Drift chamber tracks are matched to hits in the third layer of the PC, thus limiting the contribution of tracks from decays and photon conversions. The beam-beam counters (BBC) comprise two arrays of 64 quartz radiator \v{C}erenkov detectors, located longitudinally $\pm$1.44 m away from the center of the interaction region (IR), covering $2\pi$ in azimuth and \bbceta. The FVTX detector comprises two identical end-cap assemblies symmetrically located in the longitudinal direction around the IR, covering $1.0 < |\eta| < 3.0$. Charged particles are detected with an efficiency of over 95\% using clusters of hits. The event planes are measured in the Au-going direction using the south BBC (BBC-S) covering $−3.9 < \eta < −3.0$, as well as the reconstructed clusters in the south end-cap of FVTX (FVTX-S) covering $−3.0 < \eta < −1.0$. A $\pm$30 cm event vertex cut was applied for all analyses, corresponding to the central arm acceptance. 
+A detailed description of the PHENIX detector can be found in Ref.~\cite{Adcox2003469}. For this analysis, charged particles were reconstructed with the two central arm spectrometers, consisting of drift chambers (DC) and multi-wire proportional pad chambers (PC) covering $|\eta|<0.35$ and $\pi/2$ in azimuthal angle. Drift chamber tracks are matched to hits in the third layer of the PC, thus limiting the contribution of tracks from decays and photon conversions. The beam-beam counters (BBC) comprise two arrays of 64 quartz radiator \v{C}erenkov detectors, located longitudinally $\pm$1.44 m away from the center of the interaction region (IR), covering \bbceta and 2$\pi$ in azimuth. The FVTX is a silicon detector comprising two identical end-cap assemblies symmetrically located in the longitudinal direction around the IR, covering $1.0 < |\eta| < 3.0$. It uses hit clusters to detect charged particles with an efficiency of over 95\%. Relative to the PHENIX coordinate system, the Au-beam points southward in the direction of negative pseudorapidity. Hence, the arms of the BBC and FVTX in that direction are designated as the \emph{south} arms of the detectors, and styled as BBC-S and FVTX-S, respectively.
+A $\pm$30 cm event vertex cut was applied for all analyses, corresponding to the acceptance of the central arms. 
 
-The \pau data set for this analysis was collected during the 2015 run of the PHENIX experiment. It consists of 0.84 billion minimum bias (MB) triggered events and 1.4 billion high-multiplicity (HM) triggered events. The MB trigger is defined as a coincidence between the Au-going and $p$-going BBC detectors, requiring at least one photomultiplier tube (PMT) firing in each; in this way 84$\pm$4\% of the total inelastic \pau cross section is captured. The HM trigger is based on the MB trigger, but imposes the additional requirement of more than 48 photomultiplier tubes firing in the BBC-S. 
-%%A description of the \dau and \hau data sets used in this analysis can be found in %%Refs.~\cite{adare_measurement_2014} and ~\cite{PhysRevLett.115.142301}, %%respectively.
+%The event planes are measured in the Au-going direction using the south BBC (BBC-S) covering $−3.9 < \eta < −3.0$, as well as the reconstructed clusters in the south end-cap of FVTX (FVTX-S) covering $−3.0 < \eta < −1.0$.  
 
-Event centrality classes are determined as a percentile of the total multiplicity measured in the BBC-S, following the  procedure documented in Ref.~\cite{bbc}.
-%%In this analysis we select the 0-5\% most central \pau, \dau, and \hau events. 
-A standard Monte Carlo Glauber model, where nucleon coordinates are smeared by a Gaussian profile of $\sigma = 0.4$ fm, is used to characterize the initial geometry for these systems and centrality selections, as presented in Table~\ref{table_geometry}.
+The \pau data set for this analysis was collected during the 2015 data-taking run at RHIC. It consists of 0.84 billion minimum bias (MB) triggered events and 1.4 billion high-multiplicity (HM) triggered events. The MB trigger is defined as a coincidence between the Au-going and $p$-going BBC detectors, requiring at least one photomultiplier tube (PMT) firing in each; in this way 84$\pm$4\% of the total inelastic \pau cross section is captured. The HM trigger is based on the MB trigger, but imposes the additional requirement of more than 48 photomultiplier tubes firing in the BBC-S. A description of the \dau and \hau data sets used in this analysis can be found in Refs.~\cite{adare_measurement_2014} and ~\cite{PhysRevLett.115.142301}, respectively. 
+
+In this analysis, we select the 0-5\% most central \pau, \dau, and \hau events, where 
+centrality classes are defined as a percentile of the total multiplicity measured in the BBC-S, following the procedure documented in Ref.~\cite{bbc}.
+The initial geometry of events in these centrality selections is characterized using a standard Monte Carlo Glauber approach, where nucleon coordinates are smeared by a Gaussian profile of $\sigma = 0.4$ fm. The results of this characterization are shown in Table~\ref{table_geometry}, 
 
 \begin{table}
 \caption{Geometric characterization of small system collisions at \sqsn = 200 GeV in the 0-5\% centrality class, using Monte Carlo Glauber with nucleon coordinates smeared by a two-dimensional Gaussian of width $\sigma=0.4$ fm.}
@@ -144,7 +147,7 @@ A standard Monte Carlo Glauber model, where nucleon coordinates are smeared by a
 \end{ruledtabular}
 \end{table}
 
-Long-range angular correlations are constructed between charged tracks in the PHENIX central arms at a given \pt, and charge deposited in the BBC PMTs in the Au-going direction, for central \pau collisions at \sqs~=~200~GeV. The distribution of these track-PMT pairs is constructed over relative azimuth, with the normalized correlation function given by Eq.~\ref{eq:def_corr_function}, following Ref.~\cite{PhysRevLett.115.142301}:
+Long-range angular correlations are constructed between charged tracks in the PHENIX central arms at a given \pt, and charge deposited in the BBC-S PMTs, for central \pau collisions at \sqs~=~200~GeV. The distribution of these track-PMT pairs is constructed over relative azimuth, with the normalized correlation function given by Eq.~\ref{eq:def_corr_function}, following Ref.~\cite{PhysRevLett.115.142301}:
 \begin{eqnarray}
   S(\Delta\phi,p_{T})=
   \frac{ d(w_{{\rm PMT}} N^{{\rm track}(p_{T}){\rm - PMT}}_{{\rm Same \; event}}) }{ d\Delta\phi}, & &
@@ -154,21 +157,16 @@ Long-range angular correlations are constructed between charged tracks in the PH
           \frac{\int_{0}^{2\pi} M(\Delta\phi,p_{T}) \, d\Delta\phi}{\int_{0}^{2\pi} S(\Delta\phi,p_{T}) \, d\Delta\phi}. & &
   \label{eq:def_corr_function}
 \end{eqnarray}
-The weights $w_{{\rm PMT}}$ for each pair correspond to the charge in the PMTs. The signal distribution $S$ is constructed from pairs in the same event. The mixed distribution $M$ is taken over pairs from different events in the same centrality class and $z$ vertex bin, to correct for non-uniformities in acceptance over $\Delta \phi$.
+The weights $w_{{\rm PMT}}$ for each pair correspond to the charge in the PMTs. The signal distribution $S$ is constructed from pairs in the same event. The mixed distribution $M$ is taken over pairs from different events in the same centrality class and $z$ vertex bin, to correct for non-uniformity in the acceptance over $\Delta \phi$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  Fig_1 %%%%%%%%%%%%%%%%%%%%%%%%%
 % figure showing BBC-S-CNT correlations
 \begin{figure*}[htbp]
   \includegraphics[scale=0.8]{Figures/figure1.pdf}
-  \caption{(Color online) Long-range azimuthal correlations $C(\Delta\phi,p_{T})$ constructed from track-BBC PMT pairs with different selections on
-track \pt, in 0\%--5\% central \pau collisions at \sqsn~=~200~GeV. From left to right,
-track \pt categories are 0.5--1.0, 1.0--2.0, and 2.0--3.0~GeV/$c$. We fit each correlation with a four-term Fourier cosine series, with individual harmonics shown as dashed lines. The total fit is shown as a solid line.}
+  \caption{(Color online) Long-range angular correlations $C(\Delta\phi,p_{T})$ constructed with central arm tracks and BBC-S PMT pairs, in 0\%--5\% central \pau collisions at \sqsn~=~200~GeV. From left to right,
+correlations are shown for various track \pt selections: (a) 0.5--1.0 GeV/$c$, (b) 1.0--2.0 GeV/$c$, and (c) 2.0--3.0~GeV/$c$. We fit each correlation with a four-term Fourier cosine series; individual harmonics shown as dashed lines, and the total fit is shown as a solid line.}
 \label{fig:figure1}
 \end{figure*}
-
-%The resulting correlation functions are shown in Figure ~\ref{fig:figure1} and we fit the correlations %with a four-term Fourier series.
-
-%%A near-side peak is not clearly visible in \pau. Nonetheless, if we fit the correlations with a four-%%term Fourier series we observe a non-zero second harmonic even for \pau, with its magnitude being much %%smaller than in the other systems, as evidenced by the red dotted lines in the Figure %%~\ref{fig:figure1}. Therefore, we can relate the occurrence and magnitude of the near side enhancement %%with the initial collision geometry, since the eccentricities $\varepsilon_2$ in \dau and \hau are %%similar, and over twice as large as that of \pau, as shown in Table~\ref{table_geometry}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  Fig_2 %%%%%%%%%%%%%%%%%%%%%%%%%
 % figure showing c2 coefficients
@@ -184,11 +182,7 @@ ratio $c^{{\rm B}}/c^{{\rm A}}$ is shown with statistical error bars.
 \label{fig:figure2}
 \end{figure}
 
-The resulting correlation functions are shown in Figure ~\ref{fig:figure1} and we fit the correlations with a four-term Fourier series. The magnitude of the second harmonic ($c_{2}$) of the fits to the correlation functions is shown in Fig.~\ref{fig:figure2}. 
-%Panel (a) shows the $c_{2}$ coefficients as measured in all systems. 
-%The $c_2$ values \dau and \hau are found to be comparable, and over fifty percent greater than those %from 0\%--5\% \pau, with this difference being more pronounced at low \pt.
-The correlation strength arising from elementary processes (e.g., jet fragmentation, resonance decays) across collision systems can be estimated quantitatively using published $c_{2}$ measurements in \pp collisions~\cite{PhysRevLett.115.142301}. However, these must be scaled down to account for the greater number of nucleon-nucleon collisions taking place within a single \pau event. This scale factor is taken to be the ratio of the total charge measured in the BBC-S $Q^{{\rm BBC-S}}$, in the \pp reference relative to \pau as shown in Eq.~\ref{eq:dilute}. The \pau $c_{2}$ and scaled down \pp $c_{2}$
-are both shown in the panel (a) of Fig.~\ref{fig:figure2}. The relative ratio of these two $c_{2}$ are shown in the panel (a).
+The resulting correlation functions for a variety of central arm track \pt selections are shown in Figure ~\ref{fig:figure1}. Each one is fit with a four-term cosine Fourier series. The magnitude of the second harmonic ($c_{2}$) as a function of \pt is shown in red in panel (a) Fig.~\ref{fig:figure2}. The contribution of elementary processes (e.g., jet fragmentation) to the measured $c_2$ in \pau can be estimated quantitatively using the published $c_2$ from \pp at the same collision energy, yet scaled down by an appropriate factor to account for the greater number of binary nucleon collisions taking place in \pau. In this analysis, the scale factor is chosen to be the ratio of the total charge deposited in the BBC-s in \pp relative to \pau, as shown in Eq.~\ref{eq:dilute}. The scaled down \pp $c_{2}$ is shown in blue in panel (a) of Fig.~\ref{fig:figure2}. The ratio of $c_2$ in \pau to the scaled-down \pp reference is shown in panel (b). From this ratio, it can be seen that the relative correlation strength in \pau from elementary processes is at most 23\% at the highest \pt.
 
 \begin{equation}
 c_{n}^{{\rm pAu \; elementary}}(p_{T}) \simeq c_{n}^{p+p}(p_{T})
@@ -197,39 +191,22 @@ c_{n}^{{\rm pAu \; elementary}}(p_{T}) \simeq c_{n}^{p+p}(p_{T})
 }.
 \label{eq:dilute}
 \end{equation}
-As is shown in panel (b) of Fig.~\ref{fig:figure2}, the relative
-correlation strength in \pau from elementary processes is less than 23\%
-at the highest \pt. 
-%%In the case of \dau and \hau, such contributions
-%%do not exceed 15\%. As a result, the $c_2$ from \dau and \hau collisions will be greater than that of %%\pau even after subtracting the contributions from elementary processes.
 
-%%%%%%%%%%%%%%%%%%%%%%%%
-%%%COMMENT%%%%%%%%%%%%%%
-\color{red}
-INSERT A COUPLE OF SENTENCES ABOUT OTHER SCALING POSSIBILITIES FOR NON-FLOW ESTIMATION
-\color{black}
+It is noteworthy that, unlike \dau~\cite{adare_measurement_2014} and \hau~\cite{PhysRevLett.115.142301} collisions at the same centrality, the long-range angular correlations in \pau do not exhibit a discernible near-side peak---suggesting a weaker collective behavior---yet possess a non-negligible second harmonic, as quantified by the measured $c_2(p_T)$. Additionally, it is observed that the relative contribution of elementary processes to the total correlation strength $c_2$ is much higher in \pau, being more than twice the value quoted for the other two systems using the same \pp reference. 
 
-Having accounted for elementary process contributions, $v_2$ is computed using the event plane method, described in Ref.~\cite{Adare:2015ctn}, where we measure $v_{2}(p_{T}) = \langle\sum \cos 2(\phi_{Particle}(p_{T})-\Psi^{Obs}_{2})\rangle/Res(\Psi^{Obs}_{2})$ for charged hadrons at midrapidity. The second order event plane $\Psi^{Obs}_{2}$ is measured for every event using both the BBC-S and FVTX-S subsystems. 
+Having quantified the strength of elementary process contributions, we calculate the elliptic flow $v_2(p_T)$ using the event plane method, as described in Ref.~\cite{Adare:2015ctn}. Namely, we measure 
 
-The resolution of event plane are calculated by combining the $p_T$ integral raw $v_{2}$ measured by each event plane and the correlation between these two event planes. For example, the resolution of event plane from FVTX-S is calculated with the Fun.~\ref{eq:reso}:
+\begin{equation}
+v_{2}(p_{T}) = \frac{\langle\sum \cos 2(\phi_{\text{Particle}}(p_{T})-\Psi^{\text{FVTX-S}}_{2})\rangle}{\text{Res}(\Psi^{\text{FVTX-S}}_{2})}
+\end{equation}
+
+for charged hadrons at midrapidity, where the second order event plane $\Psi^{FVTX-S}_{2}$ is determined for every event using the FVTX-S detector. Its resolution is computed using the standard three-subevent method, resulting in $\text{Res}(\Psi^{\text{FVTX-S}}_{2})$ = 0.171. It is also possible to measure the event plane using the BBC-S. In that case, we obtain a lower resolution $\text{Res}(\Psi^{\text{BBC-S}}_{2})$ = 0.062, and a $v_2$ that differs from the FVTX-S measurement by approximately 3\%.
+
 \begin{eqnarray}
-Res(\Psi_{2}^{FVTX-S}) = \langle\cos 2(\Psi_{2}^{FVTX-S}-\Psi_{2}^{RP})\rangle = \nonumber \\
-\sqrt{\frac{\langle\cos 2(\Psi_{2}^{FVTX-S}-\Psi_{2}^{BBC-S})\rangle\times{v_{2}^{Raw}(\Psi^{FVTX-S}_{2})}}{v_{2}^{Raw}(\Psi^{BBC-S}_{2})}}.
-\label{eq:reso}
+\text{Res}(\Psi^{FVTX-S}_n) &=& \langle \cos[n(\Psi^{BBC-S}_n - \Psi_{RP})] \rangle \\
+&=& \sqrt{\frac{\langle \cos[n(\Psi^{BBC-S}_n - \Psi_{CNT})] \rangle \langle \cos[n(\Psi^{BBC-S}_n - \Psi^{FVTX-S}_n)] \rangle}{\langle \cos[n(\Psi^{CNT}_n - \Psi^{FVTX-S}_n)] \rangle}}
 \end{eqnarray}
-The resolution of event planes measured by FVTX-S and BBC-S are equal to 0.171 and 0.062 respectively.
-
-%%$\langle\sum \cos 2(\phi_{Particle}-\Psi^{FVTX-S}_{2})\rangle/\langle
-%%\sum \cos 2(\phi_{Particle}-\Psi^{BBC-s}_{2})
-%%\rangle$
-
-%%However, it was determined that during the 2015 \pau data-taking period, the colliding beams at RHIC %%were not parallel to the longitudinal symmetry axis of the detector (i.e., z-axis) in the PHENIX %%interaction region, making an angle of 3.6 mrad. As a result, the particle distribution was %%azimuthally asymmetric in the detectors of interest, skewing the event plane determination and leading %%to a discrepancy between $v_2$ as measured independently in each central arm. To leading order, we %%accounted for this effect by applying a counter-rotation to all hits in the BBC and FVTX-S, as well as %%to all central arm tracks. Additionally, we derived a coordinate-dependent weight factor, applied to %%hits in the BBC and FVTX-S to restore their azimuthal symmetry. 
-
-%%Following this correction, the difference between the BBC-S and FVTX-S event planes is around a few %%percent, increasing to 12\% at $p_T\approx$ 3 GeV/c. 
-
-The present analysis is carried out with the event plane as measured with the FVTX-S, treating the around 3\% difference with the BBC-S event plane as a source of systematic uncertainty. Other sources of systematic uncertainties comprise: (1) track backgrounds from weak decays and photon conversions; (2) multiple collisions in a single bunch crossing (i.e., event pile-up); (3) elementary process contributions; and (4) The difference between the $v_2$ measured from east and west DC arm.
-%residual asymmetry between the central arms of the detector after correcting for rotated colliding %beams. 
-Their magnitude is quantified as follows: (1) the track background contribution is estimated by reducing the spatial matching windows in the PC3 from $3\sigma$ to $2\sigma$, finding a fractional change of 2\% in the measured $v_{2}$; (2) the pile up fraction is found to be less than 8\%. To study the effect of pile up, we also measure the $v_2$ in the high luminosity event in which the pile up is around 17\%. The $v_2$ difference between the high luminosity. and inclusive events are less than 2\%, We assign a $^{+0}_{-4}\%$ asymmetric systematic uncertainty systematic error to account for this 8\% pile up, since the $v_{2}$ from pile-up events is expected to be smaller; (3) the contribution from elementary processes can be estimated from Figure \ref{fig:figure2}, which is around 13\% for $p_T$ less than 1.0 GeV/c and reaches a maximum of 23\% at the highest $p_T$. We assign a $^{+0}_{-23}\%$ asymmetric systematic uncertainty since these elementary processes result in an enhanced $v_2$ signal as shown in Figure~\ref{fig:figure3}; (4) A 5\% systematic uncertainties is assigned to account to the $v_2$ difference between the east and west arm.
+The main sources of systematic uncertainty on the $v_2(p_T)$ measurement are: (1) track background from photon conversion and weak decays, whose magnitude we estimate at 2\% by varying the spatial matching windows in the PC3 from 3$\sigma$ to 2$\sigma$; (2) multiple collisions per bunch crossing (i.e., event pile-up) estimated at 8\% and given an asymmetric uncertainty of $^{+0}_{-4}\%$, since their effect if to lower the $v_2$; (3) non-flow correlations from elementary processes that enhance the $v_2$, whose contribution we estimate from Fig.~\ref{fig:figure2} as reaching a maximum of 23\% at the highest \pt; hence, we assign a $^{+0}_{-23}\%$ asymmetric uncertainty. (4) the azimuthal asymmetry between the east ($-\pi/2 < \phi < \pi/2$) and west ($\pi/2 < \phi < 3\pi/2$) acceptance of the detectors due to a misalignment of 3.6 mrad between the colliding beams and the longitudinal axis of PHENIX. We applied a corresponding counter-rotation to every central arm track and detector element in the FVTX and BBC, which were also reweighted to restore their uniformity in azimuth. We estimate this systematic uncertainty at 5\% by taking the difference of $v_2$ as measured independently in each detector arm after applying the above corrections. 
 
 \label{s:sys}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Systematic Table %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -251,21 +228,20 @@ Their magnitude is quantified as follows: (1) the track background contribution 
    \end{center}
  \end{table}
 
-Table~\ref{t:sys} lists the summary of all these systematic
-uncertainties which are categorized by the types:
+Table~\ref{t:sys} summarizes of all these systematic
+uncertainties, which are categorized by type:
 
 (A) point-to-point error uncorrelated between $p_T$ bins,
 
-(B) $p_{T}$ correlated, all points move in the same direction but
-not by the same factor,
+(B) $p_{T}$-correlated, all points move in the same direction but
+not by the same amount,
 
 (C) an overall normalization error in which all points move by the
-same factor independent of $p_T$.
-%the residual effects from the beam rotation after corrections are estimated from the difference of %$v_2$ measured independently in each central arm, and estimated at 5\%.
+same amount, independently of $p_T$.
 
-The possibility of comparing the final state particle emission patterns---as quantified by $v_2$---of three collision systems with intrinsically different projectile geometry provides a valuable opportunity to quantitatively study the effect of initial geometry in the development of collectivity.  In all cases, there is a substantial $v_2$ that rises with \pt. The ordering of the curves directly correlates with the ordering of initial eccentricities $\varepsilon_2$, as presented in Table~\ref{table_geometry}. Namely, \dau has the highest $\varepsilon_2$, but close to that of \hau, while \pau has a much lower $\varepsilon_2$ than the other two systems. These results are consistent with a physical picture of small systems where initial geometry is the driver of final-state momentum anisotropy.
+The resulting $v_2$ measurement for \pau, compared to \dau and \hau in the same centrality, is shown in Fig.~\ref{fig:figure3}. The possibility of comparing the final state particle emission patterns---as quantified by $v_2$---of three collision systems with intrinsically different projectile geometry provides a valuable opportunity to quantitatively study the effect of initial geometry in the development of collectivity.  In all cases, there is a substantial $v_2$ that rises with \pt. The ordering of the curves directly correlates with the ordering of initial eccentricities $\varepsilon_2$, as presented in Table~\ref{table_geometry}. Namely, \dau has the highest $\varepsilon_2$, but close to that of \hau, while \pau has a much lower $\varepsilon_2$ than the other two systems. These results are consistent with a physical picture of small systems where initial geometry is the driver of final-state momentum anisotropy.
 
-To further explore this idea, we divide the $v_2$ curves by their corresponding $\varepsilon_2$ from Table~\ref{table_geometry}, attempting to establish a scaling relation between these two quantities. Unlike the case of ideal hydrodynamics in A+A, the ratios do not collapse to a common value, as shown in Figure~\ref{fig:figure4}. This imperfect scaling should not be interpreted as suggesting that the nature of small system collectivity is fundamentally different from that in A+A. Instead, it can be understood in terms of a \emph{short lived} QGP, expanding hydrodynamically just as in larger systems, yet unable to translate the initial geometry into the final-state in events with a limited number of hot spots far apart from each other, as discussed in Ref.~\cite{nagle_exploiting_2013}.
+To further test this idea, we divide the $v_2$ curves by their corresponding $\varepsilon_2$ from Table~\ref{table_geometry}, attempting to establish a scaling relation between these two quantities. Unlike the case of ideal hydrodynamics in A+A, the ratios do not collapse to a common value, as shown in Figure~\ref{fig:figure4}. This imperfect scaling should not be interpreted as suggesting that the nature of small system collectivity is fundamentally different from that in A+A. Instead, it can be understood in terms of a \emph{short lived} QGP, expanding hydrodynamically just as in larger systems, yet unable to translate the initial geometry into the final-state in events with a limited number of hot spots far apart from each other, as discussed in Ref.~\cite{nagle_exploiting_2013}.
 
 \begin{figure}[htbp]
   \includegraphics[scale=0.45]{Figures/figure3.pdf}
