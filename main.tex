@@ -116,18 +116,23 @@ However, recent analyses of \dau and \hau at \sqsn = 200 GeV~\cite{adare_measure
 
 Although these observations seem to support the idea of QGP formation in small systems, it is not clear that hydrodynamic expansion would translate initial geometry into final state momentum anisotropy in this regime, where the formed medium is expected to be short-lived. Other explanations have been put forth, including initial state effects from glasma diagrams~\cite{dusling_azimuthal_2012} and partonic scattering in transport models~\cite{bzdak_elliptic_2014,ma_long-range_2014,Koop:2015wea}. A key experimental test to resolve the issue consists in varying the initial geometry of the system---and hence of the ensuing QGP---to analyze the extent to which it carries into the final state~\cite{nagle_exploiting_2013}. 
 
-The PHENIX collaboration has actively pursued this course of study by analyzing data from intrinsically elliptic (\dau)~\cite{adare_measurement_2014,PhysRevLett.111.212301} and triangular (\hau)~\cite{Adare:2015ctn} collision systems at \sqsn = 200 GeV. Viscous hydrodynamics followed by a hadron cascade has been found to accurately reproduce the measured $v_n$~\cite{Romatschke:2015gxa} for these systems, establishing the importance of the initial geometry and hydrodynamic flow in the development of the $v_n$ signal in small systems.
+The PHENIX collaboration has actively pursued this course of study by analyzing data from intrinsically elliptic (\dau)~\cite{adare_measurement_2014,PhysRevLett.111.212301} and triangular (\hau)~\cite{Adare:2015ctn} collision systems at \sqsn = 200 GeV. Viscous hydrodynamics followed by a hadron cascade has been found to accurately reproduce the measured $v_n$~\cite{Romatschke:2015gxa,adare_measurement_2014,PhysRevLett.111.212301,Adare:2015ctn} for these systems, establishing the importance of the initial geometry and hydrodynamic flow in the development of the $v_n$ signal in small systems.
 
-This article completes the above suite of studies by presenting two-particle correlations and the transverse momentum (\pt) dependence of $v_2$ for central \pau collisions at \sqsn = 200 GeV. These results are compared to those from \dau and \hau in the same centrality class, as well as to available theoretical calculations.
+This article completes the above suite of studies by presenting two-particle correlations and the transverse momentum (\pt) dependence of $v_2$ for central \pau collisions at \sqsn = 200 GeV. These results are compared to those from \dau and \hau, as well as to available theoretical calculations. We apply the same analysis procedure on all three systems, on identical centrality selections, to provide a controlled comparison from which to draw conclusions.
 
-A detailed description of the PHENIX detector can be found in Ref.~\cite{Adcox2003469}. For this analysis, charged particles were reconstructed with the two central arm spectrometers, consisting of drift chambers (DC) and multi-wire proportional pad chambers (PC), each covering $|\eta|<0.35$ and $\pi/2$ in azimuthal angle. Drift chamber tracks are matched to hits in the third layer of the PC, thus limiting the contribution of tracks from decays and photon conversions. The beam-beam counters (BBC) comprise two arrays of 64 quartz radiator \v{C}erenkov detectors, located longitudinally $\pm$1.44 m away from the center of the interaction region (IR), covering \bbceta and 2$\pi$ in azimuth. The forward vertex detector (FVTX) is a silicon detector comprising two identical end-cap assemblies symmetrically located in the longitudinal direction around the IR, covering $1.0 < |\eta| < 3.0$. It uses hit clusters to detect charged particles with an efficiency of over 95\%.
+A detailed description of the PHENIX detector can be found in Refs.~\cite{Adcox2003469,fvtx}. For this analysis, charged particles were reconstructed with the two central arm spectrometers, consisting of drift chambers (DC) and multi-wire proportional pad chambers (PC), each covering $|\eta|<0.35$ and $\pi/2$ in azimuthal angle. Drift chamber tracks are matched to hits in the third layer of the PC, thus limiting the contribution of tracks from decays and photon conversions. The beam-beam counters (BBC) comprise two arrays of 64 quartz radiator \v{C}erenkov detectors, located longitudinally $\pm$1.44 m away from the center of the interaction region (IR), covering \bbceta and 2$\pi$ in azimuth. The forward vertex detector (FVTX) is a silicon detector comprising two identical end-cap assemblies symmetrically located in the longitudinal direction around the IR, covering $1.0 < |\eta| < 3.0$. It uses hit clusters to detect charged particles with an efficiency of over 95\%.
 The arms of the BBC and FVTX in the Au-going direction (i.e., direction of negative pseudorapidity) are designated as the \emph{south} arms and styled BBC-S and FVTX-S, respectively. In this analysis, a $\pm$30 cm event vertex cut was applied, corresponding to the acceptance of the central arms. 
 
 The \pau data set for this analysis was collected during the 2015 data-taking run at RHIC. It consists of 0.84 billion minimum bias (MB) triggered events and 1.4 billion high-multiplicity (HM) triggered events. The MB trigger is defined as a coincidence in the same event between the Au-going and $p$-going BBC detectors, requiring at least one photomultiplier tube (PMT) firing in each; in this way 84$\pm$4\% of the total inelastic \pau cross section is captured. The HM trigger is based on the MB trigger, but imposes the additional requirement of more than 48 photomultiplier tubes firing in the BBC-S. 
 
 In this analysis, we select the 0-5\% most central \pau events, where 
 centrality classes are defined by the quantiles of the total multiplicity measured in the BBC-S, following the procedure documented in Ref.~\cite{bbc}.
-The initial geometry of events in these centrality selections is characterized using a standard Monte Carlo Glauber approach, where nucleon coordinates are smeared by a Gaussian of width $\sigma = 0.4$ fm. The results of this characterization are shown in Table~\ref{table_geometry}.
+The initial geometry of events in these centrality selections is characterized using a standard Monte Carlo Glauber approach, where nucleon coordinates are smeared by a Gaussian of width $\sigma = 0.4$ fm. In this model, intial state eccentricity $\varepsilon_2$ is computed from initial nucleon coordinates, as shown in Eq.~\ref{eqn:epsilon2}. The results of this characterization are shown in Table~\ref{table_geometry}.
+
+\begin{equation}
+\label{eqn:epsilon2}
+\varepsilon_2 = \frac{\sqrt{\langle r^2\cos (n\phi)\rangle ^2 + \langle r^2\sin (n\phi) \rangle ^2}}{\langle r^2 \rangle}
+\end{equation}
 
 \begin{table}
 \caption{Geometric characterization of small system collisions at \sqsn = 200 GeV in the 0-5\% centrality class, using Monte Carlo Glauber with nucleon coordinates smeared by a two-dimensional Gaussian of width $\sigma=0.4$ fm.}
@@ -154,14 +159,14 @@ Long-range angular correlations are constructed between charged tracks in the PH
           \frac{\int_{0}^{2\pi} M(\Delta\phi,p_{T}) \, d\Delta\phi}{\int_{0}^{2\pi} S(\Delta\phi,p_{T}) \, d\Delta\phi}. & &
   \label{eq:def_corr_function}
 \end{eqnarray}
-The weights $w_{{\rm PMT}}$ for each pair correspond to the charge in the PMTs. The signal distribution $S$ is constructed from pairs in the same event. The mixed distribution $M$ is taken over pairs from different events in the same centrality class and $z$ vertex bin, to correct for non-uniformity in the acceptance over $\Delta \phi$.
+The weights $w_{{\rm PMT}}$ for each pair correspond to the charge in the PMTs. The signal distribution $S$ is constructed from pairs in the same event. The mixed distribution $M$ is constructed using pairs from different events in the same centrality class and collision vertex bin.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  Fig_1 %%%%%%%%%%%%%%%%%%%%%%%%%
 % figure showing BBC-S-CNT correlations
 \begin{figure*}[htbp]
   \includegraphics[scale=0.8]{Figures/figure1.pdf}
   \caption{(Color online) Long-range angular correlations $C(\Delta\phi,p_{T})$ constructed with central arm tracks and BBC-S PMT pairs, in 0\%--5\% central \pau collisions at \sqsn~=~200~GeV. From left to right,
-correlations are shown for various track \pt selections: (a) 0.5--1.0 GeV/$c$, (b) 1.0--2.0 GeV/$c$, and (c) 2.0--3.0~GeV/$c$. We fit each correlation with a four-term Fourier cosine series; individual harmonics shown as dashed lines, and the total fit is shown as a solid line.}
+correlations are shown for various track \pt categories: (a) 0.5--1.0 GeV/$c$, (b) 1.0--2.0 GeV/$c$, and (c) 2.0--3.0~GeV/$c$. We fit each correlation with a four-term Fourier cosine series; individual harmonics shown as dashed lines, and the total fit is shown as a solid line.}
 \label{fig:figure1}
 \end{figure*}
 
@@ -169,9 +174,9 @@ correlations are shown for various track \pt selections: (a) 0.5--1.0 GeV/$c$, (
 % figure showing c2 coefficients
 \begin{figure}[htbp]
   \includegraphics[scale=0.45]{Figures/figure2.pdf}
-  \caption{(Color online)~The $c_2(p_T)$ coefficients for track-BBC pairs from 
-0\%--5\% \pau, 5\%--15\% \dau and 10\%--15\% \hau collisions and
-$c_{2}(p_{T})$ for pairs in minimum bias \pp collisions times the dilution
+  \caption{(Color online)~The second order harmonic coefficients $c_2(p_T)$ for long range angular correlations in
+0\%--5\% \pau, 5\%--15\% \dau and 10\%--15\% \hau collisions, and
+$c_{2}(p_{T})$ for minimum bias \pp collisions times the scaling
 factor $\left( \sum Q^{{\rm BBC-S}} \right)_{p+p} / \left( \sum Q^{{\rm
 BBC-S}} \right)_{{\rm pAu}}$ (open, denoted ``$c^{{\rm B}}$'' ). (b)~The
 ratio $c^{{\rm B}}/c^{{\rm A}}$ is shown with statistical error bars.
@@ -193,8 +198,6 @@ The scaled down reference $c_{2}$ is shown in blue in Fig.~\ref{fig:figure2}, pa
 
 It is noteworthy that, unlike in \dau~\cite{adare_measurement_2014} and \hau~\cite{PhysRevLett.115.142301} collisions at the same centrality, the long-range angular correlations in \pau do not exhibit a discernible near-side peak, yet possess a non-negligible second harmonic component. Additionally, it is observed that the relative contribution of elementary processes to the total correlation strength $c_2$ is much higher in \pau, being more than twice the value quoted for the other two systems using the same \pp reference. The absence of a visible near-side peak can then be understood in terms of the low multiplicity environment of \pau events, in which the collectivity signal is more sensitive to the presence of non-flow effects.
 
-%We thus see that collective behavior becomes weaker with decreasing system size, and the non-flow contributions from elementary processes become more prominent. 
-
 Having quantified the strength of non-flow correlations from elementary processes, we calculate the elliptic flow $v_2(p_T)$ using the event plane method, as described in Ref.~\cite{Poskanzer:1998yz}. Namely, we measure 
 
 \begin{equation}
@@ -202,7 +205,7 @@ v_{2}(p_{T}) = \frac{\langle\sum \cos 2(\phi_{\text{Particle}}(p_{T})-\Psi^{\tex
 \end{equation}
 for charged hadrons at midrapidity, where the second order event plane $\Psi^{FVTX-S}_{2}$ is determined for every event using the FVTX-S detector. Its resolution is computed using the standard three-subevent method, correlating measurements in the BBC-S, FVTX-S, and the central arms. This results in $\text{Res}(\Psi^{\text{FVTX-S}}_{2})$ = 0.171. It is also possible to measure the event plane using the BBC-S. In that case, we obtain a lower resolution $\text{Res}(\Psi^{\text{BBC-S}}_{2})$ = 0.062, and a $v_2$ that differs from the FVTX-S measurement by approximately 3\%.
 
-The main sources of systematic uncertainty on the $v_2(p_T)$ measurement are: (1) track background from photon conversion and weak decays, whose magnitude we estimate at 2\% relative to the measured $v_2$, by varying the spatial matching windows in the PC3 from 3$\sigma$ to 2$\sigma$; (2) multiple collisions per bunch crossing (i.e., event pile-up) estimated at 8\% and given an asymmetric uncertainty of $^{+0}_{-4}\%$, since the $v_2$ decreases as a result of pile-up; (3) non-flow correlations from elementary processes that enhance the $v_2$, whose contribution we estimate from Fig.~\ref{fig:figure2} as reaching a maximum of 23\% at the highest \pt, thus assigning a $^{+0}_{-23}\%$ asymmetric uncertainty; (4) the asymmetry between the east ($-\pi/2 < \phi < \pi/2$) and west ($\pi/2 < \phi < 3\pi/2$) acceptance of the detectors due to an offset of 3.6 mrad between the colliding beams and the longitudinal axis of PHENIX, necessary for running asymmetric systems. We applied a corresponding counter-rotation to every central arm track and detector element in the FVTX and BBC, which were also reweighted to restore their uniformity in azimuth. We estimate this systematic uncertainty at 5\% by taking the difference of $v_2$ as measured independently in the east and the west arms after applying the above corrections. 
+The main sources of systematic uncertainty on the $v_2(p_T)$ measurement are: (1) track background from photon conversion and weak decays, whose magnitude we estimate at 2\% relative to the measured $v_2$, by varying the spatial matching windows in the PC3 from 3$\sigma$ to 2$\sigma$; (2) multiple collisions per bunch crossing (i.e., event pile-up) estimated at 8\% and given an asymmetric uncertainty of $^{+0}_{-4}\%$, since the $v_2$ decreases as a result of pile-up; (3) non-flow correlations from elementary processes that enhance the $v_2$, whose contribution we estimate from Fig.~\ref{fig:figure2} as reaching a maximum of 23\% at the highest \pt, thus assigning a $^{+0}_{-23}\%$ asymmetric uncertainty; (4) the asymmetry between the east ($\pi/2 < \phi < 3\pi/2$) and west ($-\pi/2 < \phi < \pi/2$) acceptance of the detectors due to an offset of 3.6 mrad between the colliding beams and the longitudinal axis of PHENIX, necessary for running asymmetric systems. We applied a corresponding counter-rotation to every central arm track and detector element in the FVTX and BBC, which were also reweighted to restore their uniformity in azimuth. We estimate this systematic uncertainty at 5\% by taking the difference of $v_2$ as measured independently in the east and the west arms after applying the above corrections. 
 
 \label{s:sys}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Systematic Table %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -233,19 +236,19 @@ uncertainties, categorized by type:
 
 (C) an overall normalization uncertainty in which all points are scale by the same multiplicative factor.
 
-The resulting $v_2$ measurement for \pau, compared to \dau and \hau in the same 0-5\% centrality class, is shown in Fig.~\ref{fig:figure3}. In all cases, there is a substantial $v_2$ that rises with \pt. The ordering of the curves is seen to be related to the initial eccentricities $\varepsilon_2$, as presented in Table~\ref{table_geometry}. Namely, like their $v_2$, \dau and \hau have a similar $\varepsilon_2$, while that of \pau is lower. Fig.~\ref{fig:figure3} also shows $v_2$ calculations for each system from the \textsc{sonic} hydrodynamic model, matched to the multiplicity of our centrality selections, generating its initial conditions from the identical Monte Carlo Glauber used to characterize event geometry. In all cases, a good agreement is seen within uncertainties between the data and the calculation. These observations strongly support the notion of initial geometry, coupled to the hydrodynamic evolution of the medium as a valid framework to understand small system collectivity.
+The resulting $v_2$ measurement for \pau, compared to \dau and \hau in the same 0-5\% centrality class, is shown in Fig.~\ref{fig:figure3}. In all cases, there is a substantial $v_2$ that rises with \pt. The ordering of the curves is seen to be related to the initial eccentricities $\varepsilon_2$, as presented in Table~\ref{table_geometry}. Namely, like their $v_2$, \dau and \hau have a similar $\varepsilon_2$, while that of \pau is lower. Fig.~\ref{fig:figure3} also shows $v_2$ calculations for each system from the \textsc{sonic}~\cite{Habich:2014jna} hydrodynamic model, matched to the multiplicity of our centrality selections, generating its initial conditions from the identical Monte Carlo Glauber used to characterize event geometry. In all cases, a good agreement is seen within uncertainties between the data and the calculation. These observations strongly support the notion of initial geometry, coupled to the hydrodynamic evolution of the medium as a valid framework to understand small system collectivity.
 
 To further explore this idea, we divide the $v_2$ curves by their corresponding $\varepsilon_2$ from Table~\ref{table_geometry}, attempting to establish a scaling relation between the two quantities. Figure~\ref{fig:figure4} shows that, unlike in A+A, the ratios do not collapse to a common value. This behavior is well reproduced by  \textsc{sonic}, since it uses the same Monte Carlo Glauber initial conditions described in Table~\ref{table_geometry}. The lack of perfect scaling reflects a particularity of hydrodynamic expansion as it occurs in certain classes of events where the collision hot spots are located far apart relative to the characteristic length scale of expansion of a short-lived QGP volume. In such case, for example, an event with two hot spots and a high initial $\varepsilon_2$ might not develop a sizable $v_2$ in the final state if the QGP droplets formed in each fireball do not live long enough to connect with each other. Further discussion can be found in Ref.~\cite{nagle_exploiting_2013}. 
 
 \begin{figure}[htbp]
   \includegraphics[scale=0.45]{Figures/figure3.pdf}
-  \caption{(Color online)$v_2$ of charged hadrons within $|\eta| <$ 0.35 in 0\%--5\% \pau, \dau, and \hau collision.}
+  \caption{(Color online)$v_2$ of charged hadrons within $|\eta| <$ 0.35 in 0\%--5\% \pau, \dau, and \hau central collisions, compared to hydrodynamic calculations using the \textsc{sonic} model, matched to the same multiplicity as the data.}
 \label{fig:figure3}
 \end{figure}
 
 \begin{figure}[htbp]
   \includegraphics[scale=0.45]{Figures/figure4.pdf}
-  \caption{(Color online)$v_2$ of charged hadrons within $|\eta| <$ 0.35 in 0\%--5\% \pau, \dau and \hau collisions, divided by their corresponding eccentricity $\varepsilon_2$ from Glauber calculations.}
+  \caption{(Color online)$v_2$ of charged hadrons within $|\eta| <$ 0.35 in 0\%--5\% \pau, \dau and \hau central collisions, divided by their corresponding eccentricity $\varepsilon_2$ from Glauber calculations, compared to \textsc{sonic} calculations of the same quantity.}
 \label{fig:figure4}
 \end{figure}
 
@@ -280,9 +283,9 @@ Predictions using IP-Glasma initial conditions followed by viscous hydrodynamics
 
 It is important to notice that additional degrees of freedom on the geometry of \pau collisions arise from fluctuations of the shape of the proton, as described in Ref.~\cite{Schlichting:2014ipa}. The contribution of this effect to the measured elliptic flow must be constrained by $p+p$ data, and also possibly by varying the target in other $p+$A systems.
 
-Finally, \textsc{ampt} combines partonic and hadronic scattering in a single model. Using the initial Glauber geometry information to compute $v_2$ relative to the participant plane~\cite{Koop:2015wea} yields results that agree reasonably well with the data below $\pt \approx 1$ GeV/c, yet underpredict them at higher \pt. It is noteworthy that despite the very different physics of \textsc{ampt} compared to the other models, it has successfully been applied to a variety of systems at RHIC~\cite{Adare:2015cpn,Koop:2015wea}, and small systems at the LHC~\cite{ma_long-range_2014,ma_long-range_2014}.
+Finally, \textsc{ampt} combines partonic and hadronic scattering in a single model. Using the initial Glauber geometry information to compute $v_2$ relative to the participant plane~\cite{Koop:2015wea} yields results that agree reasonably well with the data below $\pt \approx 1$ GeV/c, yet underpredict them at higher \pt. It is noteworthy that despite the very different physics of \textsc{ampt} compared to the other models, it has successfully been applied to a variety of systems at RHIC and the LHC. See, for example, Refs.~\cite{Adare:2015cpn,Koop:2015wea,Ma:2016fve,ma_long-range_2014,ma_long-range_2014}
 
-We have presented results on azimuthal anisotropy and elliptic flow in central \pau at \sqsn = 200 GeV, compared with $v_2$ in \dau and \hau. These results impose strong constraints on models attempting to describe the formation and behavior of hot nuclear matter in small systems. We observe an imperfect scaling of $v_2$ with $\varepsilon_2$, well reproduced by hydrodynamics, providing strong evidence for initial geometry as the source of final-state momentum anisotropy in these systems. This disfavors other explanations based on initial-state momentum space domain effects. Calculations from \textsc{sonic} and \textsc{supersonic} are able to reproduce the measured $v_2$ and their scaling behavior for central events in all systems, thus establishing hydrodynamics as a valid model to understand the physics of collectivity in this regime. 
+We have presented results on azimuthal anisotropy and elliptic flow in central \pau at \sqsn = 200 GeV, compared with $v_2$ in \dau and \hau. These results impose strong constraints on models attempting to describe the formation and behavior of hot nuclear matter in small systems. We observe an imperfect scaling of $v_2$ with $\varepsilon_2$, well reproduced by hydrodynamics, providing strong evidence for initial geometry as the source of final-state momentum anisotropy in these systems. This disfavors other explanations based on initial-state momentum space domain effects. Further insight into the nature of small system collectivity can be gained by analyzing the centrality and collision energy dependence of $v_2$, and will be the subject of future studies. 
 
 \bibliography{references}
 \end{document}
